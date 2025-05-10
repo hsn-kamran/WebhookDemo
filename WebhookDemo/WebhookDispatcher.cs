@@ -13,9 +13,10 @@ public sealed class WebhookDispatcher(HttpClient httpClient,
     InMemoryWebhookEventSubscriptionService eventSubscriptionService)
 {
     /// <summary>
-    /// вызвать 
+    /// отправить данные всем подписикам на событие
     /// </summary>
     /// <param name="eventName"></param>
+    /// <param name="payload"></param>
     /// <returns></returns>
     public async Task DispatchAsync(string eventName, object payload)
     {

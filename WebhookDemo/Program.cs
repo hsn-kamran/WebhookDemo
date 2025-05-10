@@ -57,7 +57,7 @@ app.MapPost("orders/create", async (
 {
     var order = orderService.Create(createOrderRequest);
 
-    // отправляем всем подписчиккам уведомление о создании заказа
+    // отправляем всем подписчикам уведомление о создании заказа
     await dispatcher.DispatchAsync("order.created", order);
 
     return Results.Ok(order);

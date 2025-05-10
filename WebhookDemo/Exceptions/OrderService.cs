@@ -10,7 +10,7 @@
 public record Order(Guid OrderId, string Product, int Amount, DateTime DateCreated);
 
 /// <summary>
-/// запись для созданя заказа
+/// запись для создания заказа
 /// <remarks>должен быть в отдельном проекте</remarks>
 /// </summary>
 /// <param name="Product"></param>
